@@ -1,0 +1,65 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #202020;
+  height: 100vh;
+}
+h2{
+  margin: 0;
+  display: none;
+}
+#carroussel{
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  align-content: center;
+  position: relative;
+  overflow-x:hidden    
+}
+#carroussel img{
+  width: 1280px;
+}
+.btn{
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.btn #icon-prev, .btn #icon-next{
+  display: block;
+  height: 10px;
+  width: 35px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.btn #icon-prev{
+  transform:translateY(-8px) rotate(-45deg);
+}
+.btn #icon-prev::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+  display: block;
+  transform:translate(-13px, 13px) rotate(90deg);
+}
+.btn #icon-next{
+  transform:translateY(8px) rotate(135deg)
+}
+.btn #icon-next::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+  display: block;
+  transform:translate(-13px, 13px) rotate(90deg);
+}
